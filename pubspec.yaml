@@ -1,0 +1,73 @@
+name: wazibot_mobile
+description: WaziBot Mobile — Business companion app for WaziBot AI Business OS.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Navigation
+  go_router: ^13.2.1
+
+  # HTTP client
+  dio: ^5.4.3+1
+
+  # Secure storage
+  flutter_secure_storage: ^9.2.2
+
+  # Local notifications
+  flutter_local_notifications: ^17.2.2
+
+  # Firebase (optional — see FIREBASE_SETUP.md)
+  firebase_core: ^3.3.0
+  firebase_messaging: ^15.1.0
+
+  # Image handling
+  image_picker: ^1.1.2
+  cached_network_image: ^3.3.1
+
+  # QR
+  mobile_scanner: ^5.2.3
+  qr_flutter: ^4.1.0
+
+  # Utilities
+  intl: ^0.19.0
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.1
+  share_plus: ^9.0.0
+  path_provider: ^2.1.4
+  connectivity_plus: ^6.0.5
+
+  # UI
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  fl_chart: ^0.68.0
+  lottie: ^3.1.2
+
+  # Phase 6 — Biometric authentication
+  local_auth: ^2.3.0
+
+  # Phase 7 — Swipeable list cards
+  flutter_slidable: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
